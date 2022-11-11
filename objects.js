@@ -15,45 +15,64 @@ foods = {
 // you created above:
 // YOUR CODE HERE
 
+console.log(Object.keys(foods));
+
 // Write code that prints all of the 'values' of the foods variable 
 // you created above:
 // YOUR CODE HERE
+
+console.log(Object.values(foods));
 
 // Write code that prints the value of the second food of the foods variable 
 // you created above:
 // YOUR CODE HERE
 
+console.log(foods.grapes);
+
 // Write code that adds a food to the foods object. 
 // Then, print the updated object:
 // YOUR CODE HERE
 
+foods.carrots = 20;
+console.log(Object.keys(foods));
 
-#-------------------
+
+//#-------------------
 // Part 2: Email
-#-------------------
+////#-------------------
 
 
 // Think about all the pieces of information associated with one single email in your inbox.
-// It has a sender, a subject, ...
+// It has a sender, a subject, ... 
 
 // Declare a variable that stores an object. Each key should be an attribute of an email and each
 // value should be some appropriate value for that key. Work to have at least 5 key-value pairs.
 
-// Write code that logs your email object to the terminal.
+  emails = {
+    "john@mail.com": 200,
+    "michael@mail.com": 600,
+    "noah@mail.com": 2000
+  }
 
+// Write code that logs your email object to the terminal. 
+
+console.log(emails)
 
 // Write code that logs all of the 'keys' of the email object 
-// you created above:
-// YOUR CODE HERE
+// you created above: 
+// YOUR CODE HERE 
+
+console.log(Object.keys(emails));
 
 // Write code that logs all of the 'values' of the email object 
 // you created above:
 // YOUR CODE HERE
 
+console.log(Object.values(emails));
 
-#-------------------
+//#-------------------
 // Part 3: Many Emails - CHALLENGE!
-#-------------------
+//#-------------------
 
 // LONG EXAMPLE:
 // Now that we've learned about Objects AND Arrays, we can combine them.
@@ -72,14 +91,14 @@ posts = ["image at beach", "holiday party", "adorable puppy", "video of cute bab
 posts = [
   {
     imageSrc: "./images/beach.png",
-    caption: "At the beach with my besties",
+    caption: "What did one ocean say to the other?",
     timestamp: "4:37 PM August 13, 2019",
     number_likes: 0,
     comments: []
   }, 
   {
     imageSrc: "./images/holiday-party.png",
-    caption: "What a great holiday party omg",
+    caption: "I'm still not under your Xmas tree",
     timestamp: "11:37 PM December 31, 2019",
     number_likes: 13,
     comments: []
@@ -99,3 +118,21 @@ console.log(posts[0]);
 // YOU DO: Create an array of at least 3 EMAIL Objects, using the same 
 // key-value pairs you used in your email Object above.
 // Then, print the email Array to the Terminal.
+
+
+emails = [
+{
+  sender: "john@mail.com",
+  emailsSent: 200,
+},
+{
+  sender: "michael@mail.com",
+  emailsSent: 300,
+},
+{
+  sender: "noah@gmail.com",
+  emailsSent: 100,
+}
+]
+
+console.log(emails);
